@@ -26,7 +26,12 @@ function App() {
     const API_KEY = "20f190cf445d2037ec269990f441afc0"
     const URL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}`
     axios.get(URL)
-      .then(res => setWeather(res.data))
+      .then(res => {
+        setCoords(res.data.coord)
+        setWeather(res.data)
+      })
+        
+      
       .catch(err => alert("Not found this place"))
   }
 

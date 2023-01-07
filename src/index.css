@@ -76,15 +76,15 @@ input {
 }
 
 .weatherValues {
-  font-weight:600;
-  font-size: larger;
-  color: blue;
+  font-weight:550;
+  font-size: bold;
+  color: black;
 }
 
 .weatherStatus {
-  color: blue;
-  font-weight:600;
-  font-size: larger;
+  color: black;
+  font-weight:bold;
+  font-size: bold;
 }
 
 .weatherCard-footer {
